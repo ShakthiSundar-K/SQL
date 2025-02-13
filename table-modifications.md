@@ -111,3 +111,88 @@ ALTER TABLE students ADD PRIMARY KEY (rollno);
 | Add Primary Key | `ALTER TABLE students ADD PRIMARY KEY (rollno);` |
 
 ---
+
+## **7️⃣ DELETE (Removing Specific Rows from a Table)**  
+### 🔹 **Purpose**  
+The `DELETE` statement removes specific rows from a table **without deleting the table structure**.  
+
+### 🔹 **Syntax**  
+```sql
+DELETE FROM table_name WHERE condition;
+```
+
+### 🔹 **Example**  
+```sql
+DELETE FROM students WHERE rollno = 1003;
+```
+✅ **Removes only the student with `rollno = 1003` from the table.**  
+
+### 🔹 **Need & When to Use?**  
+- Use when **removing specific rows** while keeping the table intact.  
+- Always include a `WHERE` condition to avoid deleting **all rows**.  
+- If you accidentally run `DELETE FROM students;` without `WHERE`, all rows will be removed!  
+
+---
+
+## **8️⃣ TRUNCATE (Removing All Rows from a Table Quickly)**  
+### 🔹 **Purpose**  
+The `TRUNCATE TABLE` command removes **all rows from a table** but **preserves its structure**.  
+
+### 🔹 **Syntax**  
+```sql
+TRUNCATE TABLE table_name;
+```
+
+### 🔹 **Example**  
+```sql
+TRUNCATE TABLE students;
+```
+✅ **Deletes all records from the `students` table but keeps the table structure intact.**  
+
+### 🔹 **Need & When to Use?**  
+- Use when you want to **delete all data quickly** without logging individual row deletions.  
+- Faster than `DELETE FROM students;` because it does not log each row deletion.  
+- Cannot use `WHERE` with `TRUNCATE`.  
+
+**🛑 Difference Between DELETE and TRUNCATE:**  
+| Feature  | DELETE  | TRUNCATE  |
+|----------|--------|----------|
+| Removes specific rows? | ✅ Yes (with `WHERE`) | ❌ No (removes all rows) |
+| Logs individual row deletions? | ✅ Yes | ❌ No |
+| Can be rolled back? | ✅ Yes (if inside a transaction) | ❌ No |
+| Resets auto-increment? | ❌ No | ✅ Yes |
+
+---
+
+## **9️⃣ DROP TABLE (Completely Deleting a Table)**  
+### 🔹 **Purpose**  
+The `DROP TABLE` command **permanently deletes** a table along with its structure.  
+
+### 🔹 **Syntax**  
+```sql
+DROP TABLE table_name;
+```
+
+### 🔹 **Example**  
+```sql
+DROP TABLE students;
+```
+✅ **Deletes the `students` table completely, along with all its data and structure.**  
+
+### 🔹 **Need & When to Use?**  
+- Use when you no longer need a table **at all**.  
+- **⚠ Cannot be undone unless a backup exists.**  
+- After dropping, you must recreate the table if needed.  
+
+---
+
+## **📌 Summary of Data Deletion Commands**  
+
+| **Command**   | **Deletes Data?** | **Deletes Table Structure?** | **Can Be Rolled Back?** |
+|--------------|----------------|--------------------|------------------|
+| `DELETE`     | ✅ Specific rows | ❌ No | ✅ Yes (if inside a transaction) |
+| `TRUNCATE`   | ✅ All rows | ❌ No | ❌ No |
+| `DROP TABLE` | ✅ All rows | ✅ Yes | ❌ No |
+
+---
+
