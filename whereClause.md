@@ -141,3 +141,55 @@ SELECT * FROM Production.Product WHERE SellStartDate BETWEEN '2011-04-30' AND '2
 | Date range filtering | `WHERE SellStartDate BETWEEN '2011-04-30' AND '2012-05-31'` |
 
 ---
+
+Here's the **interactive version** of your two questions, making them engaging and easy to understand. 🚀  
+
+---
+
+## **🧩 Try This! SQL Challenge Questions**  
+
+### **🔹 Question 1: Find Specific Products**
+💡 **You need to retrieve all products that meet the following conditions:**  
+✅ The **Color** must be **Black** or **Yellow**.  
+✅ The **Size** must be **S**.  
+✅ The **SellEndDate** must be `NULL` (meaning the product is still available).  
+
+👨‍💻 **Try running this query:**  
+```sql
+SELECT * FROM Production.Product 
+WHERE Color IN ('Black', 'Yellow') 
+AND Size = 'S' 
+AND SellEndDate IS NULL;
+```
+✅ This will return all products where:  
+- The **Color** is **either Black or Yellow**.  
+- The **Size** is exactly **S**.  
+- The **SellEndDate** is `NULL`, meaning the product hasn’t been discontinued.  
+
+---
+
+### **🔹 Question 2: Filter by ProductID and Price**
+💡 **Now, find all products that match these conditions:**  
+✅ The **ProductID** must be in the range **800 to 900**.  
+✅ The **Color** must be **Silver**, OR the **ListPrice** must be greater than **100**.  
+
+👨‍💻 **Try this query:**  
+```sql
+SELECT * FROM Production.Product 
+WHERE ProductID BETWEEN 800 AND 900 
+AND (Color = 'Silver' OR ListPrice > 100);
+```
+✅ Here’s how this works:  
+- The `BETWEEN` clause **filters ProductID between 800 and 900**.  
+- The parentheses **group the `OR` condition**, so:  
+  - It retrieves **Silver-colored products in this range**, OR  
+  - It retrieves **products with a ListPrice greater than 100**.  
+
+---
+
+## **✨ Why Try These Queries?**
+✅ Helps you **understand complex conditions** with `AND`, `OR`, and `IN`.  
+✅ Shows how to **filter null values** effectively.  
+✅ Encourages **hands-on SQL practice**.  
+
+💡 **Try modifying these queries with different colors, price ranges, and conditions!** 🚀
