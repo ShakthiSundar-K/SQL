@@ -63,7 +63,7 @@ Hey there! If you're exploring SQL and looking for **clear, structured, and inte
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/sql-notes.git
+git clone https://github.com/ShakthiSundar-K/SQL.git
 ```
 
 ---
