@@ -192,4 +192,4 @@ LEFT JOIN employee e ON d.DepartmentID = e.DepartmentID
 WHERE e.EmployeeID IS NULL;
 ```
 
-Hope this helps! 🚀 Let me know if you need more clarifications. 😃
+
