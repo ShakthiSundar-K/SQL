@@ -131,7 +131,7 @@ SELECT * FROM no_department_employees;
 
 ## **🔗 For Differences Between Views, Temp Tables, and Stored Procedures**
 
-[Refer to File 1](./file1.md)
+[views-temp_tables-stored_procedures-difference](./views-temp_tables-stored_procedures-difference.md)
 ---
 
 ## **📌 Final Thoughts**
