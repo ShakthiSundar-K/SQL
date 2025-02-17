@@ -15,44 +15,6 @@ Hey there! If you're exploring SQL and looking for **clear, structured, and inte
 
 ---
 
-## 📖 Topics Covered So Far  
-
-### ✅ **SQL Constraints & Rules**  
-
-- 🏷️ **[Primary Key](./primary-key.md)** – Uniquely identifies each record.  
-- 🔗 **[Foreign Key](./foreign-key.md)** – Connects related tables.  
-- 🔄 **[Unique Constraint](./unique-constraint.md)** – Ensures values are distinct.  
-- 🚫 **[Not Null Constraint](./not-null.md)** – Makes sure a column can’t be empty.  
-- 📏 **[Check Constraint](./check-constraint.md)** – Restricts values based on conditions.  
-- 🎯 **[Default Constraint](./default-constraint.md)** – Assigns default values automatically.  
-
-### 🔍 **Working with Data**  
-
-- 📌 **[WHERE Clause](./where-clause.md)** – Filtering your data.  
-- 🔎 **[LIKE Operator](./like-operator.md)** – Searching with patterns.  
-- 📊 **[ORDER BY & GROUP BY](./order-group-by.md)** – Sorting and grouping results.  
-- 🔄 **[HAVING vs. WHERE](./having-vs-where.md)** – When to use what.  
-
-### 🔄 **Making Changes in Your Database**  
-
-- ✏️ **[ALTER TABLE](./alter-table.md)** – Modifying tables.  
-- ❌ **[DROP & DELETE](./drop-delete.md)** – Removing tables or records.  
-- 🔄 **[INSERT, UPDATE & DELETE](./insert-update-delete.md)** – Adding and changing data.  
-
-### 🔗 **Querying Across Tables**  
-
-- 🔗 **[Joins (INNER, LEFT, RIGHT, FULL)](./joins.md)** – Combining data from multiple tables.  
-- 🔀 **[Subqueries vs. Joins](./subqueries-vs-joins.md)** – Choosing the right approach.  
-
----
-
-## 🎯 Who Can Use These Notes?  
-
-✅ **Students & Beginners** – If you're just starting out.  
-✅ **Developers & Engineers** – If you want to level up your SQL.  
-✅ **Data Analysts** – If you work with databases regularly.  
-
----
 
 ## 🛠️ How to Use This?  
 
